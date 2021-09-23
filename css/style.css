@@ -48,6 +48,8 @@
 
 .bg_color_bouquet .card_child_3 { overflow: hidden; border-radius: 2px; width: 60%; height: 62.5%; display: flex; justify-content: space-between; }
 
+@media (max-width: 1024px) { .bg_color_bouquet .card_child_3 { width: 80vw; height: 60vh; } }
+
 .bg_color_bouquet .card_child_3 .text_container { padding: 2.5em 4em 1em; flex: 1; background-color: #fff; display: flex; flex-direction: column; justify-content: space-between; }
 
 .bg_color_bouquet .card_child_3 .text_container .top_content { flex: 1; }

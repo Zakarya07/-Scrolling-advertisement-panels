@@ -185,6 +185,11 @@ $shoes_color:#ecd3d4;
         height: 62.5%;
         display: flex;
         justify-content:space-between;
+
+        @include laptop{
+            width: 80vw;
+            height: 60vh;
+        }
         .text_container{
             padding: 2.5em 4em 1em;
             flex: 1;
