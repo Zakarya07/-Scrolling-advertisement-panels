@@ -76,13 +76,23 @@
 
 .bg_color_womanHair .card_child_4 { background-color: white; width: 60%; height: 62.5%; display: flex; justify-content: space-between; box-shadow: 5px 25px 15px 2px black !important; overflow: hidden; border-radius: 2px; }
 
+@media (max-width: 1024px) { .bg_color_womanHair .card_child_4 { width: 80vw; height: 60vh; } }
+
 .bg_color_womanHair .card_child_4 .text_container { padding: 2em; flex: 1; display: flex; flex-direction: column; justify-content: space-around; align-items: flex-start; }
+
+@media (max-width: 1024px) { .bg_color_womanHair .card_child_4 .text_container { padding: 1em; } }
 
 .bg_color_womanHair .card_child_4 .text_container p#exclusive { background-color: #5487e0; border-radius: 25px; color: white; text-align: center; text-transform: uppercase; padding: .35em 1em; }
 
+@media (max-width: 1024px) { .bg_color_womanHair .card_child_4 .text_container p#exclusive { padding: .2em .75em; } }
+
 .bg_color_womanHair .card_child_4 .text_container h1 { font-size: 3.75em; font-weight: 100; }
 
+@media (max-width: 1024px) { .bg_color_womanHair .card_child_4 .text_container h1 { font-size: 3em; } }
+
 .bg_color_womanHair .card_child_4 .text_container p { font-size: 1.25em; color: #999393; }
+
+@media (max-width: 1024px) { .bg_color_womanHair .card_child_4 .text_container p { font-size: 1.15em; } }
 
 .bg_color_womanHair .card_child_4 .text_container .price_and_cartCallToAction { display: flex; justify-content: flex-start; align-items: center; width: 100%; }
 
@@ -97,6 +107,8 @@
 .bg_color_womanHair .card_child_4 .img_container { flex: 1.25; display: flex; align-items: center; justify-content: center; filter: drop-shadow(-5px -2px 15px #bbaaaa); }
 
 .bg_color_womanHair .card_child_4 .img_container img { height: 100%; width: 90%; }
+
+@media (max-width: 1024px) { .bg_color_womanHair .card_child_4 .img_container img { width: 100%; } }
 
 @keyframes fade { 50% { opacity: 0.5; }
   100% { opacity: 1; } }

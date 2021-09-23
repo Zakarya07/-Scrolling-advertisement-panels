@@ -306,6 +306,11 @@ $shoes_color:#ecd3d4;
         overflow: hidden;
         border-radius: 2px;
 
+        @include laptop{
+            width: 80vw;
+            height: 60vh;
+        }
+
         .text_container{
             padding: 2em;
             flex: 1;
@@ -313,6 +318,11 @@ $shoes_color:#ecd3d4;
             flex-direction: column;
             justify-content: space-around;
             align-items:flex-start;
+
+            @include laptop{
+                padding: 1em;
+            }
+
             p#exclusive{
                 background-color: #5487e0;
                 border-radius:25px;
@@ -320,16 +330,28 @@ $shoes_color:#ecd3d4;
                 text-align: center;
                 text-transform: uppercase;
                 padding: .35em 1em;
+
+                @include laptop{
+                    padding: .2em .75em;
+                }
             }
 
             h1{
                 font-size: 3.75em;
                 font-weight: 100;
+
+                @include laptop{
+                    font-size: 3em;
+                }
             }
             
             p{
                 font-size: 1.25em;
                 color: #999393;
+
+                @include laptop{
+                    font-size: 1.15em;
+                }
 
             }
 
@@ -384,6 +406,10 @@ $shoes_color:#ecd3d4;
             img{
                 height: 100%;
                 width: 90%;
+
+                @include laptop{
+                    width: 100%;
+                }
             }
         }
     }
