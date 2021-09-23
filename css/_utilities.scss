@@ -7,19 +7,19 @@ $tablet:768px;
 $phone:425px;
 
 @mixin laptop{
-    @media (max-width:#{$laptop}){
+    @media screen and (max-width:#{$laptop}){
         @content;
     }
 }
 
 @mixin tablet{
-    @media (max-width:#{$tablet}){
+    @media screen and (max-width:#{$tablet}){
         @content;
     }
 }
 
 @mixin phone{
-    @media (max-width:#{$phone}){
+    @media screen and (max-width:#{$phone}){
         @content;
     }
 }

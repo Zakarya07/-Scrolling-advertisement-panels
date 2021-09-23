@@ -45,6 +45,11 @@ $shoes_color:#ecd3d4;
             justify-content: space-evenly;
         }
 
+        @include phone{
+            justify-content: space-between;
+            min-height: 75vh;
+        }
+
       
 
         .img_container {
@@ -57,9 +62,13 @@ $shoes_color:#ecd3d4;
             
             @include laptop{
                 width: 100%;
-                height: 75%;
                 height: auto;
-        }
+            }
+
+            @include phone{
+                height:40%;
+                width: 100%;
+            }
 
             img {
                 width: 100%;
@@ -88,6 +97,10 @@ $shoes_color:#ecd3d4;
                 height: auto;
             }
 
+            @include phone {
+                height: 50%;
+            }
+          
             h5.subtitle {
                 color: darken($shoes_color, 5%);
                 font-size: 1.25em;
@@ -104,6 +117,10 @@ $shoes_color:#ecd3d4;
 
                 @include tablet{
                     word-spacing: unset;
+                }
+
+                @include phone{
+                    display: none;
                 }
         
             }
@@ -146,6 +163,11 @@ $shoes_color:#ecd3d4;
             align-items: flex-end;
             justify-content: flex-start;
             padding:1em;
+            height: 70vh;
+        }
+
+        @include phone{
+            height: 80vh;
         }
 
 
@@ -159,7 +181,13 @@ $shoes_color:#ecd3d4;
             
             @include tablet{
                 width: 50%;
-                height: 75%;
+                height: 55%;
+                opacity: .75;
+            }
+
+            @include phone{
+                width: 100%;
+                height: 100%;
                 opacity: .75;
             }
 
@@ -184,6 +212,11 @@ $shoes_color:#ecd3d4;
                     @include tablet {
                         font-size: 2.25em;
                     }
+                    
+                    @include phone {
+                        font-size: 3.5em;
+                    }
+                    
                 }
             }
             p{
@@ -197,6 +230,11 @@ $shoes_color:#ecd3d4;
 
                 @include tablet{
                         text-align: center;
+                }
+
+                @include phone {
+                    font-size: 1em;
+                    line-height: 5vh;
                 }
                 
             }
@@ -228,6 +266,10 @@ $shoes_color:#ecd3d4;
 
         @include tablet{
             height:90vh;
+        }
+
+        @include phone{
+            flex-direction: column;
         }
 
         .text_container{
@@ -277,6 +319,11 @@ $shoes_color:#ecd3d4;
                             top: -5%;
                             font-size: .25em;
                         }
+
+                        @include phone{
+                            right:0;
+                            top: -10%;
+                        }
                     }
                 }
             }
@@ -309,6 +356,10 @@ $shoes_color:#ecd3d4;
                 @include tablet{
                     flex-grow:.15;
                     width: 100%;
+                }
+
+                @include phone{
+                    flex-grow: .75;
                 }
 
                 h2{
@@ -369,6 +420,10 @@ $shoes_color:#ecd3d4;
             @include tablet{
                 flex-grow: 2;
             }
+
+            @include tablet{
+                flex-grow: 5;
+            }
         }
     }
 }
@@ -401,6 +456,11 @@ $shoes_color:#ecd3d4;
 
         @include tablet{
             flex-direction: row-reverse;
+        }
+
+        @include phone{
+            height: 90vh;
+            flex-direction: column-reverse;
         }
 
         .text_container{
@@ -439,10 +499,14 @@ $shoes_color:#ecd3d4;
                 }
                 
                 @include tablet{
-                    font-size: 2.25em;
+                    font-size: 3em;
                     text-align: center;
                 }
-            }
+                @include phone{
+                    font-size: 2em;
+                    align-self:center;
+                }
+                }
             
             p{
                 font-size: 1.25em;
@@ -451,13 +515,21 @@ $shoes_color:#ecd3d4;
                 @include laptop{
                     font-size: 1.15em;
                 }
+            
+            }
 
-                @include laptop{
+            & p:nth-of-type(2){
+
+                @include tablet{
                     font-size: 1.05em;
-                    text-align: right;
-                    color: #d39982;
+                    text-align: center;
+                    color: #d83d97;
                 }
 
+                @include phone{
+                    font-size: 0.85em;
+                    word-spacing: -2.5px;
+                }
             }
 
             .price_and_cartCallToAction{
@@ -512,6 +584,10 @@ $shoes_color:#ecd3d4;
             align-items: center;
             justify-content: center;
             filter:drop-shadow(-5px -2px 15px rgb(187, 170, 170)); 
+
+            @include tablet{
+                flex-grow: 1.75;
+            }
 
             img{
                 height: 100%;
