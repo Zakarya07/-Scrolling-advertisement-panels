@@ -34,6 +34,8 @@
 
 .bg_color_building .card_child_2 { padding: 0 1em; background: linear-gradient(rgba(0, 0, 0, 0.301), rgba(128, 128, 128, 0.356)), url("../Images/city.jpg"); background-size: cover; width: 50%; height: 55%; display: flex; align-items: center; }
 
+@media (max-width: 1024px) { .bg_color_building .card_child_2 { width: 80vw; height: 60vh; } }
+
 .bg_color_building .card_child_2 .text_container { background-color: #fff; width: 35%; height: 90%; display: flex; flex-direction: column; justify-content: space-between; }
 
 .bg_color_building .card_child_2 .text_container div.heading_container { flex: 2; display: flex; justify-content: center; align-items: center; }
