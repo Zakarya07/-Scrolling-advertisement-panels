@@ -1,0 +1,396 @@
+$shoes_color:#ecd3d4;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.card_container{
+    position: relative;
+
+    .card{
+       
+        &:first-of-type{
+            transition: none;
+        }
+            }
+}
+
+// Shoes section
+.bg_color_shoes {
+    height: 100vh;
+    background: linear-gradient(#eed2d3, #e2d5d6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card_child_1 {
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 5px 1px 10px 1px rgba(0, 0, 0, 0.26);
+        width: 50%;
+        height: 60%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .img_container {
+            width:55%;
+            height: 85%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            img {
+                width: 100%;
+                height: 85%;
+                object-fit: cover;
+                filter: hue-rotate(-20deg);
+            }
+        }
+
+        .text_container {
+            padding: 2em 0;
+            width: 35%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 80%;
+
+            h5.subtitle {
+                color: darken($shoes_color, 5%);
+                font-size: 1.25em;
+                text-transform: uppercase;
+            }
+
+            h1 {
+                text-transform: uppercase;
+            }
+
+            p {
+                word-spacing:2px;
+                text-align: justify;
+            }
+
+            .price {
+                color: darken($shoes_color, 10%);
+            }
+        }
+    }
+}
+
+// Building section
+
+.bg_color_building{
+    height: 100vh;
+    background-color: #25282f;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+    .card_child_2{
+        padding:0 1em;
+        background: linear-gradient(rgba(0, 0, 0, 0.301),rgba(128, 128, 128, 0.356)), url("../Images/city.jpg");
+        background-size: cover;
+        width:50%;
+        height: 55%;
+        display: flex;
+        align-items: center;
+        .text_container{
+            background-color: #fff;
+            width: 35%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            div.heading_container{
+                flex: 2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h1{
+                    filter: grayscale(75%);
+                    background:url("../Images/city.jpg");
+                    background-position: center 10%;
+                    background-size: cover;
+                    -webkit-background-clip:text;
+                    color: transparent;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-size: 3em;
+                }
+            }
+            p{
+                font-size: .9em;
+                line-height: 22.5px;
+                padding: 0em .5em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex: 1;
+            }
+        }
+    }
+}
+
+// Flower
+
+.bg_color_bouquet{
+    height: 100vh;
+    background:linear-gradient(270deg,#9b80f5,#c197f9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .card_child_3{
+        overflow: hidden;
+        border-radius:2px;
+        width:60%;
+        height: 62.5%;
+        display: flex;
+        justify-content:space-between;
+        .text_container{
+            padding: 2.5em 4em 1em;
+            flex: 1;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .top_content{
+                flex: 1;
+                h1{
+                    font-size: 3em;
+                    font-family: serif;
+                    position: relative;
+               
+                    span{
+                        background-color:#ffa69e;
+                        color: white;
+                        font-size: .35em;
+                        padding: .4em;
+                        border-radius: 5px;
+                        font-weight: bold;
+                        font-style: italic;
+                        position: absolute;
+                        top: -20%;
+                    }
+                }
+            }
+            .main_content{
+                flex: 5;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                             
+                p{
+                    line-height: 25px;
+                    text-align: center;
+                    font-style: italic;
+                    &::first-letter{
+                        font-size:1.75em;
+                    }
+                }
+            }
+            
+            .price_content{
+                flex: 1.25;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h2{
+                   background-color:#323232; 
+                   height: 50%;
+                   min-width: 12.5%;
+                   color: white;
+                   display: flex;
+                   align-items: center;
+                   padding:0 .5em;
+                   font-size: 1.15em;
+                   font-weight: 100;
+                   font-style:italic;
+                   border-top-left-radius:5px;
+                   border-bottom-left-radius:5px;
+                }
+                
+                button{
+                    border-top-right-radius:5px;
+                    border-bottom-right-radius:5px;
+                    background-color:#429c12; 
+                    border: none;
+                   height: 50%;
+                   color: white;
+                   display: flex;
+                   align-items: center;
+                   padding:0 .5em;
+                   min-width: 25%;
+                   display: flex; 
+                   justify-content: center;
+                   align-items: center;                 
+                   font-size: 1.15em;
+                   font-weight: 100;
+                   font-style: italic;
+                   font-family: impact;
+                }
+            }
+        }
+        .image_container{
+            flex: 1;
+            background-image: url("../Images/flower.jpg");
+            background-size: cover;
+            background-position: center 85%;
+            filter:brightness(100%) contrast(105%) hue-rotate(310deg);
+        }
+    }
+}
+
+// afro
+
+
+.bg_color_womanHair{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #262626;
+    flex-direction: column;
+    
+    .card_child_4{
+        background-color:white;
+        width:60%;
+        height: 62.5%;
+        display: flex;
+        justify-content:space-between;
+        box-shadow: 5px 25px 15px 2px rgb(0, 0, 0) !important;
+        overflow: hidden;
+        border-radius: 2px;
+
+        .text_container{
+            padding: 2em;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items:flex-start;
+            p#exclusive{
+                background-color: #5487e0;
+                border-radius:25px;
+                color: white;
+                text-align: center;
+                text-transform: uppercase;
+                padding: .35em 1em;
+            }
+
+            h1{
+                font-size: 3.75em;
+                font-weight: 100;
+            }
+            
+            p{
+                font-size: 1.25em;
+                color: #999393;
+
+            }
+
+            .price_and_cartCallToAction{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 100%;
+                p{
+                    padding: .25em .5em;
+                    border: 1px solid #999393;
+                    border-top-left-radius: 20px;
+                    border-bottom-left-radius: 20px;
+                    color: black;
+                    height: 100%;
+                    font-weight: bold;
+                }
+                
+                a{
+                    font-weight: bold;
+                    padding: .25em .5em;
+                    height: 100%;
+                    color: black;
+                    border: 1px solid #999393;
+                    text-decoration:none;
+                    text-transform: uppercase;
+                    border-top-right-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: all .15s linear;
+
+                    &:hover{
+                        transform: scale(1.025);
+                    }
+
+                    &:focus{
+                        background-color: rgb(175, 166, 255);
+                    }
+                }
+            }
+        }
+
+        .img_container{
+            flex: 1.25;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            filter:drop-shadow(-5px -2px 15px rgb(187, 170, 170)); 
+
+            img{
+                height: 100%;
+                width: 90%;
+            }
+        }
+    }
+
+}
+
+
+@keyframes fade{
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.animationForLastCard{
+    animation: animationForLastCard 2.5s linear forwards 1, animationForLastCard_blink 3s linear alternate forwards infinite;
+}
+
+@keyframes animationForLastCard {
+    100%{
+    transform:translateY(12.5vh);
+}        
+
+}
+
+@keyframes animationForLastCard_blink {
+
+    0%{
+        color:#85fff7;
+        opacity: .5;
+    }
+    
+    50%{
+        opacity: .75;
+    }     
+    100%{
+        opacity: 1;
+        color:#f293ff;
+    }   
+
+}
+
+

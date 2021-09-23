@@ -1,0 +1,100 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+.card_container { position: relative; }
+
+.card_container .card:first-of-type { transition: none; }
+
+.bg_color_shoes { height: 100vh; background: linear-gradient(#eed2d3, #e2d5d6); display: flex; justify-content: center; align-items: center; }
+
+.bg_color_shoes .card_child_1 { border-radius: 10px; background-color: #fff; box-shadow: 5px 1px 10px 1px rgba(0, 0, 0, 0.26); width: 50%; height: 60%; display: flex; justify-content: space-around; align-items: center; }
+
+.bg_color_shoes .card_child_1 .img_container { width: 55%; height: 85%; display: flex; justify-content: center; align-items: center; }
+
+.bg_color_shoes .card_child_1 .img_container img { width: 100%; height: 85%; object-fit: cover; filter: hue-rotate(-20deg); }
+
+.bg_color_shoes .card_child_1 .text_container { padding: 2em 0; width: 35%; height: 100%; display: flex; flex-direction: column; justify-content: space-around; height: 80%; }
+
+.bg_color_shoes .card_child_1 .text_container h5.subtitle { color: #e4c1c3; font-size: 1.25em; text-transform: uppercase; }
+
+.bg_color_shoes .card_child_1 .text_container h1 { text-transform: uppercase; }
+
+.bg_color_shoes .card_child_1 .text_container p { word-spacing: 2px; text-align: justify; }
+
+.bg_color_shoes .card_child_1 .text_container .price { color: #ddafb1; }
+
+.bg_color_building { height: 100vh; background-color: #25282f; display: flex; justify-content: center; align-items: center; }
+
+.bg_color_building .card_child_2 { padding: 0 1em; background: linear-gradient(rgba(0, 0, 0, 0.301), rgba(128, 128, 128, 0.356)), url("../Images/city.jpg"); background-size: cover; width: 50%; height: 55%; display: flex; align-items: center; }
+
+.bg_color_building .card_child_2 .text_container { background-color: #fff; width: 35%; height: 90%; display: flex; flex-direction: column; justify-content: space-between; }
+
+.bg_color_building .card_child_2 .text_container div.heading_container { flex: 2; display: flex; justify-content: center; align-items: center; }
+
+.bg_color_building .card_child_2 .text_container div.heading_container h1 { filter: grayscale(75%); background: url("../Images/city.jpg"); background-position: center 10%; background-size: cover; -webkit-background-clip: text; color: transparent; text-align: center; text-transform: uppercase; font-size: 3em; }
+
+.bg_color_building .card_child_2 .text_container p { font-size: .9em; line-height: 22.5px; padding: 0em .5em; display: flex; justify-content: center; align-items: center; flex: 1; }
+
+.bg_color_bouquet { height: 100vh; background: linear-gradient(270deg, #9b80f5, #c197f9); display: flex; justify-content: center; align-items: center; }
+
+.bg_color_bouquet .card_child_3 { overflow: hidden; border-radius: 2px; width: 60%; height: 62.5%; display: flex; justify-content: space-between; }
+
+.bg_color_bouquet .card_child_3 .text_container { padding: 2.5em 4em 1em; flex: 1; background-color: #fff; display: flex; flex-direction: column; justify-content: space-between; }
+
+.bg_color_bouquet .card_child_3 .text_container .top_content { flex: 1; }
+
+.bg_color_bouquet .card_child_3 .text_container .top_content h1 { font-size: 3em; font-family: serif; position: relative; }
+
+.bg_color_bouquet .card_child_3 .text_container .top_content h1 span { background-color: #ffa69e; color: white; font-size: .35em; padding: .4em; border-radius: 5px; font-weight: bold; font-style: italic; position: absolute; top: -20%; }
+
+.bg_color_bouquet .card_child_3 .text_container .main_content { flex: 5; display: flex; justify-content: center; align-items: center; }
+
+.bg_color_bouquet .card_child_3 .text_container .main_content p { line-height: 25px; text-align: center; font-style: italic; }
+
+.bg_color_bouquet .card_child_3 .text_container .main_content p::first-letter { font-size: 1.75em; }
+
+.bg_color_bouquet .card_child_3 .text_container .price_content { flex: 1.25; display: flex; justify-content: center; align-items: center; }
+
+.bg_color_bouquet .card_child_3 .text_container .price_content h2 { background-color: #323232; height: 50%; min-width: 12.5%; color: white; display: flex; align-items: center; padding: 0 .5em; font-size: 1.15em; font-weight: 100; font-style: italic; border-top-left-radius: 5px; border-bottom-left-radius: 5px; }
+
+.bg_color_bouquet .card_child_3 .text_container .price_content button { border-top-right-radius: 5px; border-bottom-right-radius: 5px; background-color: #429c12; border: none; height: 50%; color: white; display: flex; align-items: center; padding: 0 .5em; min-width: 25%; display: flex; justify-content: center; align-items: center; font-size: 1.15em; font-weight: 100; font-style: italic; font-family: impact; }
+
+.bg_color_bouquet .card_child_3 .image_container { flex: 1; background-image: url("../Images/flower.jpg"); background-size: cover; background-position: center 85%; filter: brightness(100%) contrast(105%) hue-rotate(310deg); }
+
+.bg_color_womanHair { height: 100vh; display: flex; justify-content: center; align-items: center; background: #262626; flex-direction: column; }
+
+.bg_color_womanHair .card_child_4 { background-color: white; width: 60%; height: 62.5%; display: flex; justify-content: space-between; box-shadow: 5px 25px 15px 2px black !important; overflow: hidden; border-radius: 2px; }
+
+.bg_color_womanHair .card_child_4 .text_container { padding: 2em; flex: 1; display: flex; flex-direction: column; justify-content: space-around; align-items: flex-start; }
+
+.bg_color_womanHair .card_child_4 .text_container p#exclusive { background-color: #5487e0; border-radius: 25px; color: white; text-align: center; text-transform: uppercase; padding: .35em 1em; }
+
+.bg_color_womanHair .card_child_4 .text_container h1 { font-size: 3.75em; font-weight: 100; }
+
+.bg_color_womanHair .card_child_4 .text_container p { font-size: 1.25em; color: #999393; }
+
+.bg_color_womanHair .card_child_4 .text_container .price_and_cartCallToAction { display: flex; justify-content: flex-start; align-items: center; width: 100%; }
+
+.bg_color_womanHair .card_child_4 .text_container .price_and_cartCallToAction p { padding: .25em .5em; border: 1px solid #999393; border-top-left-radius: 20px; border-bottom-left-radius: 20px; color: black; height: 100%; font-weight: bold; }
+
+.bg_color_womanHair .card_child_4 .text_container .price_and_cartCallToAction a { font-weight: bold; padding: .25em .5em; height: 100%; color: black; border: 1px solid #999393; text-decoration: none; text-transform: uppercase; border-top-right-radius: 20px; border-bottom-right-radius: 20px; display: flex; justify-content: center; align-items: center; transition: all .15s linear; }
+
+.bg_color_womanHair .card_child_4 .text_container .price_and_cartCallToAction a:hover { transform: scale(1.025); }
+
+.bg_color_womanHair .card_child_4 .text_container .price_and_cartCallToAction a:focus { background-color: #afa6ff; }
+
+.bg_color_womanHair .card_child_4 .img_container { flex: 1.25; display: flex; align-items: center; justify-content: center; filter: drop-shadow(-5px -2px 15px #bbaaaa); }
+
+.bg_color_womanHair .card_child_4 .img_container img { height: 100%; width: 90%; }
+
+@keyframes fade { 50% { opacity: 0.5; }
+  100% { opacity: 1; } }
+
+.animationForLastCard { animation: animationForLastCard 2.5s linear forwards 1, animationForLastCard_blink 3s linear alternate forwards infinite; }
+
+@keyframes animationForLastCard { 100% { transform: translateY(12.5vh); } }
+
+@keyframes animationForLastCard_blink { 0% { color: #85fff7;
+    opacity: .5; }
+  50% { opacity: .75; }
+  100% { opacity: 1;
+    color: #f293ff; } }

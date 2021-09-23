@@ -1,0 +1,25 @@
+// color for the pink shoes card
+$shoes_color:#ecd3d4;
+
+// sizes of different terminals for media-queries
+$laptop:1024px;
+$tablet:768px;
+$phone:425px;
+
+@mixin laptop{
+    @media (max-width:#{$laptop}){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media (max-width:#{$tablet}){
+        @content;
+    }
+}
+
+@mixin phone{
+    @media (max-width:#{$phone}){
+        @content;
+    }
+}
