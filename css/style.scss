@@ -45,6 +45,7 @@ $shoes_color:#ecd3d4;
             justify-content: space-evenly;
         }
 
+      
 
         .img_container {
             width:55%;
@@ -100,10 +101,19 @@ $shoes_color:#ecd3d4;
             p {
                 word-spacing:2px;
                 text-align: justify;
+
+                @include tablet{
+                    word-spacing: unset;
+                }
+        
             }
 
             .price {
                 color: darken($shoes_color, 10%);
+                @include tablet{
+                    color: darken($shoes_color, 5%);
+                    text-align: right;
+                }
             }
         }
     }
@@ -131,6 +141,13 @@ $shoes_color:#ecd3d4;
             width:80vw;
             height: 60vh;
         }
+        
+        @include tablet{
+            align-items: flex-end;
+            justify-content: flex-start;
+            padding:1em;
+        }
+
 
         .text_container{
             background-color: #fff;
@@ -139,11 +156,20 @@ $shoes_color:#ecd3d4;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            
+            @include tablet{
+                width: 50%;
+                height: 75%;
+                opacity: .75;
+            }
+
+
             div.heading_container{
                 flex: 2;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
                 h1{
                     filter: grayscale(75%);
                     background:url("../Images/city.jpg");
@@ -154,6 +180,10 @@ $shoes_color:#ecd3d4;
                     text-align: center;
                     text-transform: uppercase;
                     font-size: 3em;
+
+                    @include tablet {
+                        font-size: 2.25em;
+                    }
                 }
             }
             p{
@@ -164,6 +194,11 @@ $shoes_color:#ecd3d4;
                 justify-content: center;
                 align-items: center;
                 flex: 1;
+
+                @include tablet{
+                        text-align: center;
+                }
+                
             }
         }
     }
@@ -190,6 +225,11 @@ $shoes_color:#ecd3d4;
             width: 80vw;
             height: 60vh;
         }
+
+        @include tablet{
+            height:90vh;
+        }
+
         .text_container{
             padding: 2.5em 4em 1em;
             flex: 1;
@@ -198,12 +238,28 @@ $shoes_color:#ecd3d4;
             flex-direction: column;
             justify-content: space-between;
 
+            @include tablet{
+                padding: 1em;
+                justify-content: space-evenly;
+                flex-grow:1.25;
+            }
+
             .top_content{
                 flex: 1;
+
+
+                @include tablet{
+                    flex-grow: .25;
+                }
+
                 h1{
                     font-size: 3em;
                     font-family: serif;
                     position: relative;
+
+                    @include tablet{
+                        text-align: center;
+                    }
                
                     span{
                         background-color:#ffa69e;
@@ -215,6 +271,12 @@ $shoes_color:#ecd3d4;
                         font-style: italic;
                         position: absolute;
                         top: -20%;
+
+                        @include tablet{
+                            right: 15%;
+                            top: -5%;
+                            font-size: .25em;
+                        }
                     }
                 }
             }
@@ -223,6 +285,10 @@ $shoes_color:#ecd3d4;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                @include tablet{
+                    display: none;
+                }
                              
                 p{
                     line-height: 25px;
@@ -239,6 +305,12 @@ $shoes_color:#ecd3d4;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                @include tablet{
+                    flex-grow:.15;
+                    width: 100%;
+                }
+
                 h2{
                    background-color:#323232; 
                    height: 50%;
@@ -252,6 +324,10 @@ $shoes_color:#ecd3d4;
                    font-style:italic;
                    border-top-left-radius:5px;
                    border-bottom-left-radius:5px;
+
+                   @include tablet{
+                       height: 40%;
+                   }
                 }
                 
                 button{
@@ -272,6 +348,14 @@ $shoes_color:#ecd3d4;
                    font-weight: 100;
                    font-style: italic;
                    font-family: impact;
+
+
+                   @include tablet{
+                    height: 40%;
+                    min-width: 50%;
+                }
+             
+                   
                 }
             }
         }
@@ -281,6 +365,10 @@ $shoes_color:#ecd3d4;
             background-size: cover;
             background-position: center 85%;
             filter:brightness(100%) contrast(105%) hue-rotate(310deg);
+
+            @include tablet{
+                flex-grow: 2;
+            }
         }
     }
 }
@@ -311,6 +399,10 @@ $shoes_color:#ecd3d4;
             height: 60vh;
         }
 
+        @include tablet{
+            flex-direction: row-reverse;
+        }
+
         .text_container{
             padding: 2em;
             flex: 1;
@@ -334,6 +426,8 @@ $shoes_color:#ecd3d4;
                 @include laptop{
                     padding: .2em .75em;
                 }
+
+              
             }
 
             h1{
@@ -342,6 +436,11 @@ $shoes_color:#ecd3d4;
 
                 @include laptop{
                     font-size: 3em;
+                }
+                
+                @include tablet{
+                    font-size: 2.25em;
+                    text-align: center;
                 }
             }
             
@@ -353,6 +452,12 @@ $shoes_color:#ecd3d4;
                     font-size: 1.15em;
                 }
 
+                @include laptop{
+                    font-size: 1.05em;
+                    text-align: right;
+                    color: #d39982;
+                }
+
             }
 
             .price_and_cartCallToAction{
@@ -360,6 +465,11 @@ $shoes_color:#ecd3d4;
                 justify-content: flex-start;
                 align-items: center;
                 width: 100%;
+
+                @include tablet{
+                    justify-content: flex-end;
+                }
+                
                 p{
                     padding: .25em .5em;
                     border: 1px solid #999393;
