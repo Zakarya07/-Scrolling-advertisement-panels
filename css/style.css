@@ -2,6 +2,8 @@
 
 .card_container { position: relative; }
 
+.card_container .card { position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0; transition: all .5s .25s linear; }
+
 .card_container .card:first-of-type { transition: none; }
 
 .bg_color_shoes { height: 100vh; background: linear-gradient(#eed2d3, #e2d5d6); display: flex; justify-content: center; align-items: center; }
