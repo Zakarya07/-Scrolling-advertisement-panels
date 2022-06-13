@@ -8,11 +8,10 @@ $shoes_color:#ecd3d4;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-
+// General style that all the card share
 .card_container{
     position: relative;
    
-
     .card{
         position: absolute;
         top: 0;
@@ -20,7 +19,7 @@ $shoes_color:#ecd3d4;
         right: 0;
         bottom: 0;
         opacity: 0;
-        transition: all .5s .25s linear;
+        transition: all 2.5s ease-in;
 
         &:first-of-type{
             transition: none;
@@ -31,7 +30,7 @@ $shoes_color:#ecd3d4;
 // Shoes section
 .bg_color_shoes {
     height: 100vh;
-    background: linear-gradient(#eed2d3, #e2d5d6);
+    background: linear-gradient(#ffe3e3, #ffd2d5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,7 +144,6 @@ $shoes_color:#ecd3d4;
 }
 
 // Building section
-
 .bg_color_building{
     height: 100vh;
     background-color: #25282f;
@@ -251,7 +249,6 @@ $shoes_color:#ecd3d4;
 }
 
 // Flower
-
 .bg_color_bouquet{
     height: 100vh;
     background:linear-gradient(270deg,#9b80f5,#c197f9);
@@ -436,15 +433,13 @@ $shoes_color:#ecd3d4;
     }
 }
 
-// afro
-
-
-.bg_color_womanHair{
+// Woman
+.bg_color_woman{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #262626;
+    background: #373737;
     flex-direction: column;
     
     .card_child_4{
@@ -453,7 +448,7 @@ $shoes_color:#ecd3d4;
         height: 62.5%;
         display: flex;
         justify-content:space-between;
-        box-shadow: 5px 25px 15px 2px rgb(0, 0, 0) !important;
+        box-shadow: 5px 20px 20px 2px rgb(26, 26, 26) !important;
         overflow: hidden;
         border-radius: 2px;
 
@@ -484,7 +479,7 @@ $shoes_color:#ecd3d4;
             }
 
             p#exclusive{
-                background-color: #5487e0;
+                background-color: #3161ff;
                 border-radius:25px;
                 color: white;
                 text-align: center;
@@ -494,7 +489,6 @@ $shoes_color:#ecd3d4;
                 @include laptop{
                     padding: .2em .75em;
                 }
-
               
             }
 
@@ -591,7 +585,7 @@ $shoes_color:#ecd3d4;
             display: flex;
             align-items: center;
             justify-content: center;
-            filter:drop-shadow(-5px -2px 15px rgb(187, 170, 170)); 
+            filter:box-shadow(1px 1px 20px 5px rgb(255, 0, 0)); 
 
             @include tablet{
                 flex-grow: 1.75;
@@ -599,7 +593,10 @@ $shoes_color:#ecd3d4;
 
             img{
                 height: 100%;
-                width: 90%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center 30%;
+                filter: brightness(110%) contrast(105%);
 
                 @include laptop{
                     width: 100%;
@@ -610,7 +607,7 @@ $shoes_color:#ecd3d4;
 
 }
 
-
+// keyframes 
 @keyframes fade{
     50%{
         opacity: 0.5;
@@ -619,26 +616,16 @@ $shoes_color:#ecd3d4;
         opacity: 1;
     }
 }
-
-
-.animationForLastCard{
-    animation: animationForLastCard 2.5s linear forwards 1, animationForLastCard_blink 3s linear alternate forwards infinite;
-}
-
 @keyframes animationForLastCard {
     100%{
     transform:translateY(12.5vh);
 }        
-
 }
-
 @keyframes animationForLastCard_blink {
-
     0%{
         color:#85fff7;
         opacity: .5;
     }
-    
     50%{
         opacity: .75;
     }     
@@ -646,7 +633,9 @@ $shoes_color:#ecd3d4;
         opacity: 1;
         color:#f293ff;
     }   
-
 }
 
-
+// Calling keyframe via animation property 
+.animationForLastCard{
+    animation: animationForLastCard 2.5s linear forwards 1, animationForLastCard_blink 3s linear alternate forwards infinite;
+}
